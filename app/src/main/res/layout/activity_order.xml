@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_bg"
+    tools:context=".Activities.OrderActivity">
+
+    <EditText
+        android:id="@+id/txt_O_OrderDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:textStyle="italic"
+        android:ems="10"
+        android:hint="Enter Order Date"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_O_Order"
+        app:layout_constraintEnd_toEndOf="@+id/txt_O_ProductName"
+        app:layout_constraintStart_toStartOf="@+id/txt_O_Quantity"
+        app:layout_constraintTop_toBottomOf="@+id/txt_O_Quantity" />
+
+    <EditText
+        android:id="@+id/txt_O_Quantity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:textStyle="italic"
+        android:hint="Enter Quantity"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/txt_O_OrderDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_O_ProductName" />
+
+    <EditText
+        android:id="@+id/txt_O_CategoryName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Enter Category Name"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_O_ProductName"
+        app:layout_constraintEnd_toEndOf="@+id/txt_O_ProductName"
+        app:layout_constraintStart_toStartOf="@+id/txt_O_ProductName"
+        app:layout_constraintTop_toBottomOf="@+id/txt_O_ProductId" />
+
+    <EditText
+        android:id="@+id/txt_O_ProductId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="43dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Enter Product Id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_O_CategoryName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_O_Order"
+        android:layout_width="158dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="@color/white"
+        android:text="Order Now"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_O_OrderDate" />
+
+    <EditText
+        android:id="@+id/txt_O_ProductName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:textStyle="italic"
+        android:hint="Enter Product Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_O_Quantity"
+        app:layout_constraintEnd_toEndOf="@+id/txt_O_ProductId"
+        app:layout_constraintStart_toStartOf="@+id/txt_O_Quantity"
+        app:layout_constraintTop_toBottomOf="@+id/txt_O_CategoryName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
